@@ -1,0 +1,23 @@
+SimulationType                MonteCarlo
+NumberOfCycles                {NumberOfCycles}
+NumberOfInitializationCycles  {NumberOfInitializationCycles}
+PrintEvery                    1000
+PrintPropertiesEvery          1000
+
+Forcefield                    {Forcefield}
+
+Framework 0
+FrameworkName {FrameworkName}
+RemoveAtomNumberCodeFromLabel no
+UnitCells {UnitCells}
+ExternalTemperature {Temperature}
+UseChargesFromCIFFile         yes
+ExternalPressure {ExternalPressure}
+
+Component 0 MoleculeName             {MoleculeName}
+            MoleculeDefinition       {MoleculeDefinition}
+            TranslationProbability {TranslationProbability}
+            ReinsertionProbability {ReinsertionProbability}
+            SwapProbability {SwapProbability}
+            CreateNumberOfMolecules 0
+

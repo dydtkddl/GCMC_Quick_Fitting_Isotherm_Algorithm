@@ -1,0 +1,36 @@
+python gcmc_simulation.py \
+    --simulation_dir "${PYRAS}/Quick_Fitting_Algorithm/simulations/example01" \
+    --pressure_point 50000 \
+    --mof_cif_name "[CoreMOF]ABAYIO_clean.cif" \
+    --cut_off 12.5 \
+    --base_template_path "${PYRAS}/Quick_Fitting_Algorithm/base_templates/base_template_gcmc1005.txt" \
+    --force_field "NayeonFollowup" \
+    --nunber_of_cycles 25000 \
+    --nunber_of_initial_cycles 2000 \
+    --adsorbate "O2" \
+    --temperature 293.15 \
+    --molecule_definition "ExampleDefinitions" \
+    --translation_probability 0.5 \
+    --reinsertion_probability 0.5 \
+    --swap_probability 1.0 \
+    --raspa_dir ${RASPA} \
+
+
+
+python gcmc_simulation.py \
+    --simulation_dir "${PYRAS}/Quick_Fitting_Algorithm/simulations/example01" \
+    --pressure_point 50000 \
+    --mof_cif_name "[CoreMOF]ABAYIO_clean.cif" \
+    --cut_off 12.5 \
+    --base_template_path "${PYRAS}/Quick_Fitting_Algorithm/base_templates/base_template_gcmc1005.txt" \
+    --force_field "NayeonFollowup" \
+    --nunber_of_cycles 0 \
+    --nunber_of_initial_cycles 2000 \
+    --adsorbate "O2" \
+    --temperature 293.15 \
+    --molecule_definition "ExampleDefinitions" \
+    --translation_probability 0.5 \
+    --reinsertion_probability 0.5 \
+    --swap_probability 1.0 \
+    --raspa_dir ${RASPA} \
+    --description '첫 시도 연습삼아'
